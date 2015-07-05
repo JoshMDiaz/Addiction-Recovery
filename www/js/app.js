@@ -30,23 +30,70 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: "/search",
+  .state('app.chat', {
+    url: "/chat",
     views: {
       'menuContent': {
-        templateUrl: "templates/search.html"
+        templateUrl: "templates/chat.html"
       }
     }
   })
 
-  .state('app.browse', {
-    url: "/browse",
+  .state('app.counter', {
+    url: "/counter",
     views: {
       'menuContent': {
-        templateUrl: "templates/browse.html"
+        templateUrl: "templates/counter.html",
+        controller: 'CounterCtrl'
       }
     }
   })
+
+  .state('app.goals', {
+    url: "/goals",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/goals.html"
+      }
+    }
+  })
+
+  .state('app.inspirational-messages', {
+    url: "/inspirational-messages",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/inspirational-messages.html"
+      }
+    }
+  })
+
+  .state('app.local-meetings', {
+    url: "/local-meetings",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/local-meetings.html"
+      }
+    }
+  })
+
+  .state('app.pdf', {
+    url: "/pdf",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/pdf.html"
+      }
+    }
+  })
+
+  .state('app.reminders', {
+    url: "/reminders",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/reminders.html"
+      }
+    }
+  })
+
     .state('app.playlists', {
       url: "/playlists",
       views: {
@@ -67,5 +114,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/counter');
 });
