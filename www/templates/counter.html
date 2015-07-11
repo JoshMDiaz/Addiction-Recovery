@@ -1,7 +1,12 @@
 <ion-view view-title="Counter">
-  <ion-content>
+  <ion-content id="counter">
     <h1>{{counter}}</h1>
-    <button type="button" name="plus" ng-model="counter"  ng-click="plus()">+</button>
-    <button type="button" name="reset" ng-model="counter"  ng-click="reset()">Reset</button>
+    <button type="button" name="plus" ng-model="counter"  ng-click="plus()">
+      <i class="ion-plus-round"></i>
+    </button>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <button type="button" id="reset" name="reset" ng-model="counter"  ng-click="reset()">
+      <i class="ion-loop"></i>
+    </button>
   </ion-content>
 </ion-view>
