@@ -7694,10 +7694,7 @@ a.button {
   transition-duration: 0s; }
 
 #counter {
-  background: #222D35;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background: #222D35; }
   #counter h1 {
     color: #D7D7D6;
     font-size: 10em;
@@ -7708,8 +7705,13 @@ a.button {
     border: none;
     border-radius: 4px;
     font-size: 3em;
-    width: 150px;
-    margin-top: 1em; }
+    width: 100%; }
   #counter button#reset {
+    background: #A64655;
+    color: #D7D7D6; }
+  #counter button#minus {
     background: #D7D7D6;
     color: #47A65A; }
+  #counter #counter-width {
+    max-width: 400px;
+    margin: 0 auto; }

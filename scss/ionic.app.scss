@@ -25,15 +25,12 @@ $dark: #222D35;
 $light: #D7D7D6;
 $stable: #26333D;
 $positive: #47A65A;
-$energized: #47A65A;
+$danger: #A64655;
 
 
 // Counter
 #counter {
   background: $dark;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   h1 {
     color: $light;
     font-size: 10em;
@@ -45,11 +42,35 @@ $energized: #47A65A;
     border: none;
     border-radius: 4px;
     font-size: 3em;
-    width: 150px;
-    margin-top: 1em;
+    width: 100%;
   }
   button#reset {
+    background: $danger;
+    color: $light;
+  }
+  button#minus {
     background: $light;
     color: $positive;
   }
+  #counter-width {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// end

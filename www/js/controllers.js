@@ -48,6 +48,11 @@ angular.module('starter.controllers', [])
   $scope.plus = function() {
     $scope.counter += 1;
   };
+  $scope.minus = function() {
+    if($scope.counter > 0 ) {
+      $scope.counter -= 1;
+    }
+  };
   $scope.reset = function() {
     $scope.counter = 0;
   };
