@@ -1,24 +1,20 @@
 <ion-view view-title="Counter">
   <ion-content id="counter">
     <div id="counter-width">
+      <button type="button" id="reset" name="reset" ng-model="counter" class="padding button button-clear button-stable icon-left ion-loop cf" ng-click="reset()">
+        Reset
+      </button>
+      <div class="cf"></div>
       <h1>{{counter}}</h1>
       <div class="row">
         <div class="col">
-          <button type="button" name="plus" ng-model="counter"  ng-click="plus()">
+          <button type="button" id="plus" name="plus" ng-model="counter" ng-click="plus()">
             <i class="ion-plus-round"></i>
           </button>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </div>
         <div class="col">
-          <button type="button" id="minus" name="minus" ng-model="counter"  ng-click="minus()">
+          <button type="button" id="minus" name="minus" ng-model="counter" ng-click="minus()">
             <i class="ion-minus"></i>
-          </button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button type="button" id="reset" name="reset" ng-model="counter"  ng-click="reset()">
-            <i class="ion-loop"></i>
           </button>
         </div>
       </div>

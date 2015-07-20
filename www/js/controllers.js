@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('arApp.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -43,8 +43,6 @@ angular.module('starter.controllers', [])
 
 .controller('CounterCtrl', function($scope) {
   $scope.counter = 0;
-  // $scope.plus = counter + 1;
-  // $scope.reset = counter - 1;
   $scope.plus = function() {
     $scope.counter += 1;
   };
