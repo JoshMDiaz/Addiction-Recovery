@@ -46,7 +46,7 @@ angular.module('arApp.controllers', [])
   $scope.plus = function() {
     $scope.counter += 1;
   };
-  $scope.minus = function() {
+  $scope.undo = function() {
     if($scope.counter > 0 ) {
       $scope.counter -= 1;
     }

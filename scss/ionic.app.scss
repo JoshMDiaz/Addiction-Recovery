@@ -21,11 +21,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-$dark: #222D35;
-$light: #D7D7D6;
-$stable: #26333D;
-$positive: #47A65A;
-$assertive: #A64655;
+$dark: #333333;
+$light: #ffffff;
+$stable: #d1d1d3;
+$positive: #147ea7;
+$assertive: #bc242d;
+$energized: #0c8667;
 
 
 .cf {
@@ -43,9 +44,9 @@ $assertive: #A64655;
     border: none;
     border-radius: 4px;
   }
-  button#plus, button#minus {
-    background: $light;
-    color: $dark;
+  button#plus {
+    background: $positive;
+    color: $light;
     font-size: 3em;
     width: 100%;
   }

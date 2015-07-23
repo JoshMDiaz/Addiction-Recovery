@@ -7,3 +7,5 @@ plugins/
 hooks/
 resources/
 npm-debug.log
+serve/
+sass/
