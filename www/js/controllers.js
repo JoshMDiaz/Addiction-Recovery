@@ -57,9 +57,18 @@ angular.module('arApp.controllers', [])
     $scope.counter = 0;
     $scope.modal.show();
   };
-  $scope.counterMessage = {
-    message: "It's ok!"
-  }
+  $scope.counterMessageArray = [
+    {
+      message: "It's ok!"
+    },
+    {
+      message: "You'll be fine!"
+    },
+    {
+      message: "Get up and try again!"
+    }
+  ];
+
   $ionicModal.fromTemplateUrl('templates/counter-modal.html', {
     scope: $scope,
     animation: 'slide-in-up'
