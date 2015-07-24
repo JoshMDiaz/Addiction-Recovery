@@ -1,17 +1,19 @@
 <ion-view view-title="Daily Counter">
   <ion-content id="counter">
     <div id="counter-width">
-      <button type="button" id="reset" name="reset" ng-model="counter" class="padding button button-clear button-stable icon-left ion-loop cf" ng-click="reset()">
-        Reset
-      </button>
-      <button type="button" id="undo" name="undo" ng-model="counter" class="padding button button-clear button-stable icon-left ion-reply cf" ng-click="undo()">
+      <!-- Undo -->
+      <button type="button" id="undo" name="undo" ng-model="counter" class="padding button button-clear icon-left ion-reply cf" ng-click="undo()">
         Undo
       </button>
-      <div class="cf"></div>
+      <!-- Reset -->
+      <button type="button" id="reset" name="reset" ng-model="counter" class="padding button button-clear icon-left ion-loop pull-right cf" ng-click="reset()">
+        Reset
+      </button>
+      <div class="cf"></div> <!-- Clearfix -->
       <h1>{{counter}}</h1>
       <div class="row">
         <div class="col">
-          <button type="button" id="plus" name="plus" ng-model="counter" ng-click="plus()">
+          <button type="button" id="plus" class="button-positive col" name="plus" ng-model="counter" ng-click="plus()">
             <i class="ion-plus-round"></i>
           </button>
         </div>

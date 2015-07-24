@@ -41,7 +41,8 @@ angular.module('arApp.controllers', [])
   };
 })
 
-.controller('CounterCtrl', function($scope) {
+// CounterCtrl
+.controller('CounterCtrl', function($scope, $ionicModal) {
   $scope.counter = 0;
   $scope.plus = function() {
     $scope.counter += 1;
@@ -51,9 +52,26 @@ angular.module('arApp.controllers', [])
       $scope.counter -= 1;
     }
   };
+
   $scope.reset = function() {
     $scope.counter = 0;
+    $scope.modal.show();
   };
+  $scope.counterMessage = {
+    message: "It's ok!"
+  }
+  $ionicModal.fromTemplateUrl('templates/counter-modal.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  })
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+  $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
 })
 
 .controller('PlaylistsCtrl', function($scope) {

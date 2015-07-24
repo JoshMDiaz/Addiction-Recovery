@@ -28,9 +28,29 @@ $positive: #147ea7;
 $assertive: #bc242d;
 $energized: #0c8667;
 
+// Colors
+.bar-dark, .button-dark {
+  background: $dark !important;
+}
+.bar-stable, .button-stable {
+  background: $stable !important;
+}
+.bar-positive, .button-positive {
+  background: $positive !important;
+}
+.bar-assertive, .button-assertive {
+  background: $assertive !important;
+}
+.bar-energized, .button-energized {
+  background: $energized !important;
+}
 
 .cf {
   clear: both;
+}
+
+.pull-right {
+  float: right;
 }
 
 // Counter
@@ -43,15 +63,11 @@ $energized: #0c8667;
   button {
     border: none;
     border-radius: 4px;
+    color: $stable;
   }
   button#plus {
-    background: $positive;
-    color: $light;
     font-size: 3em;
-    width: 100%;
-  }
-  button#reset {
-    float: right;
+    color: $light;
   }
   #counter-width {
     max-width: 400px;

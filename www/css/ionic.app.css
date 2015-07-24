@@ -7693,8 +7693,26 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.bar-dark, .button-dark {
+  background: #333333 !important; }
+
+.bar-stable, .button-stable {
+  background: #d1d1d3 !important; }
+
+.bar-positive, .button-positive {
+  background: #147ea7 !important; }
+
+.bar-assertive, .button-assertive {
+  background: #bc242d !important; }
+
+.bar-energized, .button-energized {
+  background: #0c8667 !important; }
+
 .cf {
   clear: both; }
+
+.pull-right {
+  float: right; }
 
 #counter h1 {
   color: #333333;
@@ -7702,14 +7720,11 @@ a.button {
   text-align: center; }
 #counter button {
   border: none;
-  border-radius: 4px; }
+  border-radius: 4px;
+  color: #d1d1d3; }
 #counter button#plus {
-  background: #147ea7;
-  color: #ffffff;
   font-size: 3em;
-  width: 100%; }
-#counter button#reset {
-  float: right; }
+  color: #ffffff; }
 #counter #counter-width {
   max-width: 400px;
   margin: 0 auto; }
