@@ -57,17 +57,17 @@ angular.module('arApp.controllers', [])
     $scope.counter = 0;
     $scope.modal.show();
   };
-  $scope.counterMessageArray = [
-    {
-      message: "It's ok!"
-    },
-    {
-      message: "You'll be fine!"
-    },
-    {
-      message: "Get up and try again!"
-    }
-  ];
+  $scope.counterMessages = 
+    // {
+    //   message: "It's ok!"
+    // },
+    // {
+    //   message: "You'll be fine!"
+    // },
+    // {
+    //   message: "Get up and try again!"
+    // }
+      ["It's ok!", "You'll be fine!", "Get up and try again!"];
 
   $ionicModal.fromTemplateUrl('templates/counter-modal.html', {
     scope: $scope,
