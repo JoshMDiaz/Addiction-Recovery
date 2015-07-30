@@ -1,21 +1,4 @@
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
-
-For example, you might change some of the default colors:
-
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #222D35 !default;
-*/
-
-// The path for our ionicons font files, relative to the built CSS in www/css
+// The path for ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
@@ -74,6 +57,38 @@ $energized: #0c8667;
     margin: 0 auto;
   }
 }
+
+// Counter-Modal
+.modal {
+  background: url("/img/christ_woman.jpg") no-repeat center center;
+  background-size: cover;
+  @media (min-width: 600px) {
+    background-size: contain;
+}
+  button {
+    color: $light !important;
+    font-size: 2em;
+    position: relative;
+    top: 5px;
+    right: 5px;
+  }
+  .reset-message {
+      text-align: center;
+      max-width: 325px;
+      margin: 1em auto;
+      figure {
+          img {
+              width: 100%;
+          }
+          figcaption {
+              font-style: italic;
+              font-size: 1.1em;
+          }
+      }
+  }
+}
+
+
 
 
 

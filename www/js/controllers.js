@@ -56,18 +56,29 @@ angular.module('arApp.controllers', [])
   $scope.reset = function() {
     $scope.counter = 0;
     $scope.modal.show();
+    $scope.randomScripture();
   };
-  $scope.counterMessages = 
-    // {
-    //   message: "It's ok!"
-    // },
-    // {
-    //   message: "You'll be fine!"
-    // },
-    // {
-    //   message: "Get up and try again!"
-    // }
-      ["It's ok!", "You'll be fine!", "Get up and try again!"];
+  $scope.counterScriptures = [
+    {
+      scripture: "It's ok!"
+    },
+    {
+      scripture: "You'll be fine!"
+    },
+    {
+      scripture: "Get up and try again!"
+    },
+    {
+      scripture: "You got this!"
+    }
+  ];
+  $scope.counterScripturesArray = ["It's ok!", "You'll be fine!", "Get up and try again!", "You got this!"];
+  $scope.randomScripture = function() {
+    $scope.scripture = $scope.counterScripturesArray[Math.floor(Math.random() * $scope.counterScripturesArray.length)];
+    return $scope.scripture;
+  };
+
+
 
   $ionicModal.fromTemplateUrl('templates/counter-modal.html', {
     scope: $scope,
