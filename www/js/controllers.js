@@ -58,21 +58,25 @@ angular.module('arApp.controllers', [])
     $scope.modal.show();
     $scope.randomScripture();
   };
-  $scope.counterScriptures = [
+  $scope.counterScripturesArray = [
     {
-      scripture: "It's ok!"
+      scripture: "10) When Jesus had lifted up himself, and saw none but the woman, he said unto her, Woman, where are those thine accusers? hath no man condemned thee? 11) She said, No man, Lord. And Jesus said unto her, Neither do I condemn thee: go, and sin no more. 12) Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.",
+      chapter: "John 8: 10-12"
     },
-    {
-      scripture: "You'll be fine!"
-    },
-    {
-      scripture: "Get up and try again!"
-    },
-    {
-      scripture: "You got this!"
-    }
+    // {
+    //   scripture: "You'll be fine!",
+    //   chapter: "John 8: 10-12"
+    // },
+    // {
+    //   scripture: "Get up and try again!",
+    //   chapter: "John 8: 10-12"
+    // },
+    // {
+    //   scripture: "You got this!",
+    //   chapter: "John 8: 10-12"
+    // }
   ];
-  $scope.counterScripturesArray = ["It's ok!", "You'll be fine!", "Get up and try again!", "You got this!"];
+  // $scope.counterScripturesArray = ["It's ok!", "You'll be fine!", "Get up and try again!", "You got this!"];
   $scope.randomScripture = function() {
     $scope.scripture = $scope.counterScripturesArray[Math.floor(Math.random() * $scope.counterScripturesArray.length)];
     return $scope.scripture;

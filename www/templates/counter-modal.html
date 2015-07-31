@@ -4,8 +4,11 @@
     <button class="button button-outline button-light ion-close-round pull-right" ng-click="closeModal()"></button>
     <div class="cf"></div>
     <div class="reset-message list list-inset">
-      <div class="item">
-        {{scripture}}
+      <div class="item item-divider">
+        {{scripture.chapter}}
+      </div>
+      <div class="item item-text-wrap">
+        {{scripture.scripture}}
       </div>
     </div>
 
