@@ -76,6 +76,15 @@ angular.module('arApp', ['ionic', 'arApp.controllers'])
     }
   })
 
+  .state('app.login', {
+    url: "/login",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/login.html"
+      }
+    }
+  })
+
   .state('app.pdf', {
     url: "/pdf",
     views: {
@@ -114,5 +123,5 @@ angular.module('arApp', ['ionic', 'arApp.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/counter');
+  $urlRouterProvider.otherwise('/app/login');
 });
