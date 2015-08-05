@@ -10,7 +10,7 @@ angular.module('arApp.controllers', [])
   //});
 
   // Form data for the login modal
-  $scope.loginData = {};
+  // $scope.loginData = {};
 
   // // Create the login modal that we will use later
   // $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -30,15 +30,15 @@ angular.module('arApp.controllers', [])
   // };
 
   // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
-
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
+  // $scope.doLogin = function() {
+  //   console.log('Doing login', $scope.loginData);
+  //
+  //   // Simulate a login delay. Remove this and replace with your login
+  //   // code if using a login system
+  //   $timeout(function() {
+  //     $scope.closeLogin();
+  //   }, 1000);
+  // };
 })
 
 // CounterCtrl
@@ -93,6 +93,42 @@ angular.module('arApp.controllers', [])
     $scope.modal.remove();
   });
 })
+
+.controller('InspirationalMsgsCtrl', function($scope, $stateParams) {
+  $scope.inspirationalMessages = [
+    {
+      author: "1",
+      message: "Test1",
+    },
+    {
+      author: "2",
+      message: "Test2",
+    },
+    {
+      author: "3",
+      message: "Test3",
+    },
+    {
+      author: "4",
+      message: "Test4",
+    },
+    {
+      author: "5",
+      message: "Test5",
+    },
+    {
+      author: "6",
+      message: "Test6",
+    },
+    {
+      author: "7",
+      message: "Test7",
+    }
+  ]
+})
+
+// .controller('InspirationalMsgCtrl', function($scope, $stateParams) {
+// })
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [

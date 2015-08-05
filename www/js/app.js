@@ -62,7 +62,18 @@ angular.module('arApp', ['ionic', 'arApp.controllers'])
     url: "/inspirational-messages",
     views: {
       'menuContent': {
-        templateUrl: "templates/inspirational-messages.html"
+        templateUrl: "templates/inspirational-messages.html",
+        controller: 'InspirationalMsgsCtrl'
+      }
+    }
+  })
+
+  .state('app.message', {
+    url: "/inspirational-messages/:author",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/inspirational-message.html",
+        controller: 'InspirationalMsgsCtrl'
       }
     }
   })
@@ -103,15 +114,15 @@ angular.module('arApp', ['ionic', 'arApp.controllers'])
     }
   })
 
-    .state('app.playlists', {
-      url: "/playlists",
-      views: {
-        'menuContent': {
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
-        }
+  .state('app.playlists', {
+    url: "/playlists",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/playlists.html",
+        controller: 'PlaylistsCtrl'
       }
-    })
+    }
+  })
 
   .state('app.single', {
     url: "/playlists/:playlistId",

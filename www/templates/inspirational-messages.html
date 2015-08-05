@@ -1,5 +1,9 @@
 <ion-view view-title="Inspirational Messages">
   <ion-content>
-    <h1>Inspirational Messages</h1>
+    <ion-list>
+      <ion-item ng-repeat="iMsg in inspirationalMessages" ng-href="#/app/inspirational-messages/{{iMsg.author}}">
+        {{iMsg.author}}
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>
