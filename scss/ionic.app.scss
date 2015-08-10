@@ -74,9 +74,8 @@ $energized: #0c8667;
   }
   .reset-message {
       max-width: 325px;
-      margin: auto;
       background: none;
-      margin-top: 2em;
+      margin: 2em auto;
       .item {
         background-color: rgba(0,0,0,0.45);
         color: $light;
